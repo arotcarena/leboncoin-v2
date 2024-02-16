@@ -1,0 +1,22 @@
+<div class="form-group form-input">
+    <svg class="icon i-left">
+        <use xlink:href="/img/svg/sprite.svg#search"></use>
+    </svg>
+    <input 
+        class="main-form-input main-form-q q-slider-opener js-auto-suggest suggest-q form-box" 
+        {# slider #}
+        data-template="#main-form-q-template"
+        data-closer=".i-return"
+        data-maxwidth="1050"
+        {# autosuggest #}
+        data-entrypoint="{{ path('product_titleSuggest') }}"
+        data-minqlength="2"
+
+        type="text" 
+        name="q" 
+        id="q" 
+        placeholder="Que recherchez-vous ?"
+        autocomplete="off"
+        value="{{ searchFilter.q }}"
+        >
+</div>

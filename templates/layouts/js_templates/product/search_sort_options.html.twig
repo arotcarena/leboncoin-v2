@@ -1,0 +1,37 @@
+<template id="search-sort-options-template">
+    <ul class="search-sort-list select-list">
+        <li class="search-sort-item select-option" data-value="latest">
+            Tri : Plus récentes
+            <div class="sort-hidden-inputs">
+                <input type="hidden" name="sortby" value="createdAt">
+                <input type="hidden" name="dir" value="desc">
+            </div>
+        </li>
+        <li class="search-sort-item select-option" data-value="oldest">
+            Tri : Plus anciennes
+            <div class="sort-hidden-inputs">
+                <input type="hidden" name="sortby" value="createdAt">
+                <input type="hidden" name="dir" value="asc">
+            </div>
+        </li>
+        <li class="search-sort-item select-option" data-value="price_up">
+            Tri : Prix croissants
+            <div class="sort-hidden-inputs">
+                <input type="hidden" name="sortby" value="price">
+                <input type="hidden" name="dir" value="asc">
+            </div>
+        </li>
+        <li class="search-sort-item select-option" data-value="price_down">
+            Tri : Prix décroissants
+            <div class="sort-hidden-inputs">
+                <input type="hidden" name="sortby" value="price">
+                <input type="hidden" name="dir" value="desc">
+            </div>
+        </li>
+        <li class="search-sort-item select-option default" data-value="logic">
+            Tri : Pertinence
+            <div class="sort-hidden-inputs">
+            </div>
+        </li>
+    </ul>
+</template>

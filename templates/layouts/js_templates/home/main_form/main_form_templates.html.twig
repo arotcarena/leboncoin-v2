@@ -1,0 +1,370 @@
+<template id="main-form-category-template">
+    <div class="main-form-category-slider">
+
+        <header class="main-form-slider-topbar">
+            {% set title = 'Catégories' %}
+            {% include "layouts/js_templates/home/main_form/_topbar.html.twig" %}
+        </header>
+
+        <ul class="main-form-category-list slider-list">
+            <li class="main-form-category-item default slider-item"
+                data-value=""
+                data-label="Catégories"
+                data-iconleft="true"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#list"></use>
+                </svg>
+                <span class="main-form-category-label">Toutes catégories</span>
+            </li>
+
+            <li class="main-form-category-item slider-item"
+                data-value="1"
+                data-label="Vacances"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#sun"></use>
+                </svg>
+                <span class="main-form-category-label">Vacances</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="2"
+                data-label="Emploi"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#cases"></use>
+                </svg>
+                <span class="main-form-category-label">Emploi</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="3"
+                data-label="Véhicules"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#car"></use>
+                </svg>
+                <span class="main-form-category-label">Véhicules</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="4"
+                data-label="Immobilier"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#home"></use>
+                </svg>
+                <span class="main-form-category-label">Immobilier</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="5"
+                data-label="Mode"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#fashion"></use>
+                </svg>
+                <span class="main-form-category-label">Mode</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="6"
+                data-label="Maison"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#chair"></use>
+                </svg>
+                <span class="main-form-category-label">Maison</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="7"
+                data-label="Multimédia"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#phone"></use>
+                </svg>
+                <span class="main-form-category-label">Multimédia</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="8"
+                data-label="Loisirs"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#sports"></use>
+                </svg>
+                <span class="main-form-category-label">Loisirs</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="9"
+                data-label="Animaux"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#pets"></use>
+                </svg>
+                <span class="main-form-category-label">Animaux</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="10"
+                data-label="Matériel Professionnel"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#forklift"></use>
+                </svg>
+                <span class="main-form-category-label">Matériel Professionnel</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="11"
+                data-label="Services"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#handshake"></use>
+                </svg>
+                <span class="main-form-category-label">Services</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+            <li class="main-form-category-item slider-item"
+                data-value="12"
+                data-label="Divers"
+            >
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#more-horiz"></use>
+                </svg>
+                <span class="main-form-category-label">Divers</span>
+                <svg class="icon i-right">
+                    <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+                </svg>
+            </li>
+        </ul>
+    </div>
+</template>
+
+
+<template id="main-form-q-template">
+    <div class="main-form-input-slider main-form-q-slider">
+        <header class="main-form-slider-topbar">
+            {% set title = 'Que recherchez-vous ?' %}
+            {% include "layouts/js_templates/home/main_form/_topbar.html.twig" %}
+        </header>
+        {% include "main_form/_form_start.html.twig" %}
+        {% include "main_form/fields/_q.html.twig" %}
+
+        {% include "main_form/optionnal_fields/_title_search.html.twig" %}
+        <ul class="lasts-q-list slider-list">
+            <li class="lasts-q-item slider-item">
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#clock"></use>
+                </svg>
+                <span>chaise</span>
+                <svg class="icon i-right js-lasts-q-item-closer">
+                    <use xlink:href="/img/svg/sprite.svg#close"></use>
+                </svg>
+            </li>
+            <li class="lasts-q-item slider-item">
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#clock"></use>
+                </svg>
+                <span>voiture</span>
+                <svg class="icon i-right js-lasts-q-item-closer">
+                    <use xlink:href="/img/svg/sprite.svg#close"></use>
+                </svg>
+            </li>
+            <li class="lasts-q-item slider-item">
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#clock"></use>
+                </svg>
+                <span>développeur web</span>
+                <svg class="icon i-right js-lasts-q-item-closer">
+                    <use xlink:href="/img/svg/sprite.svg#close"></use>
+                </svg>
+            </li>
+        </ul>
+        {% include "main_form/_submit.html.twig" %}
+        {% include "main_form/_form_end.html.twig" %}
+    </div>
+</template>
+
+<template id="main-form-location-template">
+    <div class="main-form-input-slider main-form-location-slider">
+        <header class="main-form-slider-topbar">
+            {% set title = 'Où cherchez-vous ?' %}
+            {% include "layouts/js_templates/home/main_form/_topbar.html.twig" %}
+        </header>
+        {% include "main_form/_form_start.html.twig" %}
+        {% include "main_form/fields/_location.html.twig" %}
+
+        {# <ul class="location-choices-list">
+            <li class="location-choices-item">
+                <div class="location-bubble">
+                    <span>Morcenx (40110)</span>
+                    <svg class="icon js-location-bubble-closer">
+                        <use xlink:href="/img/svg/sprite.svg#close"></use>
+                    </svg>
+                </div>
+                <div class="location-ray">
+                    <span>rayon</span>
+                    <svg class="icon">
+                        <use xlink:href="/img/svg/sprite.svg#expand-more"></use>
+                    </svg>
+                </div>
+            </li>
+            <li class="location-choices-item">
+                <div class="location-bubble">
+                    <span>Saint-Jean-Pied-de-Cochon (64100)</span>
+                    <svg class="icon js-location-bubble-closer">
+                        <use xlink:href="/img/svg/sprite.svg#close"></use>
+                    </svg>
+                </div>
+                <div class="location-ray">
+                    <span>rayon</span>
+                    <svg class="icon js-location-ray-opener">
+                        <use xlink:href="/img/svg/sprite.svg#expand-more"></use>
+                    </svg>
+                </div>
+            </li>
+        </ul>     
+
+        <div class="">
+            <p class="">
+                Dans un rayon autour de <br>(a faire plus tard)<br>
+            </p>
+        </div>
+
+
+        <ul class="lasts-location-list slider-list">
+            <p class="lasts-location-list-title">Localisations récentes</p>
+            <li class="lasts-location-item slider-item">
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#location-fill"></use>
+                </svg>
+                <span>Biarritz (64200) - 20 km</span>
+                <svg class="icon i-right js-lasts-location-item-closer">
+                    <use xlink:href="/img/svg/sprite.svg#close"></use>
+                </svg>
+            </li>
+            <li class="lasts-location-item slider-item">
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#location-fill"></use>
+                </svg>
+                <span>Salon de Provence (13300)</span>
+                <svg class="icon i-right js-lasts-location-item-closer">
+                    <use xlink:href="/img/svg/sprite.svg#close"></use>
+                </svg>
+            </li>
+            <li class="lasts-location-item slider-item">
+                <svg class="icon i-left">
+                    <use xlink:href="/img/svg/sprite.svg#location-fill"></use>
+                </svg>
+                <span>Lamanon (13330)</span>
+                <svg class="icon i-right js-lasts-location-item-closer">
+                    <use xlink:href="/img/svg/sprite.svg#close"></use>
+                </svg>
+            </li>
+        </ul> #}
+        {% include "main_form/_submit.html.twig" %}
+        {% include "main_form/_form_end.html.twig" %}
+    </div>
+</template>
+
+
+<template id="location-manager-template">
+    <div class="location-manager">
+       <div class="location-manager-body">
+             <ul class="location-choices-list">
+            </ul>
+            <div class="location-manager-radius">
+                <p class="location-radius-title">Dans un rayon autour de</p>
+                <div class="location-radius-active-line">
+                </div>
+                <div class="location-radius-line">
+                    <div class="location-radius-ball">
+                        <div class="location-radius-ball-label">0 km</div>
+                    </div>
+                </div>
+                <div class="location-radius-subtext">
+                    <span class="left">0 km</span>
+                    <span class="right">200 km</span>
+                </div>
+            </div>
+            <ul class="lasts-location-list">
+                <p class="lasts-location-list-title">Localisations récentes</p>
+                <li class="lasts-location-item">
+                    <svg class="icon i-left">
+                        <use xlink:href="/img/svg/sprite.svg#location-fill"></use>
+                    </svg>
+                    <span>Biarritz (64200) - 20 km</span>
+                </li>
+                <li class="lasts-location-item">
+                    <svg class="icon i-left">
+                        <use xlink:href="/img/svg/sprite.svg#location-fill"></use>
+                    </svg>
+                    <span>Salon de Provence (13300)</span>
+                </li>
+                <li class="lasts-location-item">
+                    <svg class="icon i-left">
+                        <use xlink:href="/img/svg/sprite.svg#location-fill"></use>
+                    </svg>
+                    <span>Lamanon (13330)</span>
+                </li>
+            </ul>
+       </div>
+       <div class="location-manager-footer">
+            <button class="location-manager-button btn-grey js-delete-button" value="delete">Effacer</button>
+            <button class="location-manager-button btn-orange js-valid-button" value="valid">Valider les localisations</button>
+       </div>
+    </div>
+</template>
+
+<template id="location-choices-item-template">
+    <li class="location-choices-item">
+        <div class="location-bubble" data-label="" data-value="">
+            <span class="js-location-label"></span>
+            <svg class="icon js-location-bubble-closer">
+                <use xlink:href="/img/svg/sprite.svg#close"></use>
+            </svg>
+        </div>
+        <div class="location-radius-opener">
+            <span>rayon</span>
+            <svg class="icon location-radius-opener-icon">
+                <use xlink:href="/img/svg/sprite.svg#chevron-right"></use>
+            </svg>
+        </div>
+    </li>
+</template>
+
+
+<template id="location-bubble-template">
+    <div class="location-bubble" data-label="" data-value="">
+        <span class="js-location-label"></span>
+        <svg class="icon js-location-bubble-closer">
+            <use xlink:href="/img/svg/sprite.svg#close"></use>
+        </svg>
+    </div>
+</template>

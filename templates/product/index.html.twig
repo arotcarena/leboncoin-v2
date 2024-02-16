@@ -1,0 +1,54 @@
+{% extends "base.html.twig" %}
+
+{% block js %}
+    <script src="/js/views/product/index.js" type="module" defer></script>
+    <script src="/js/views/main_form.js" type="module" defer></script>
+{% endblock %}
+
+{% block body %}
+
+
+    <section class="main main-searchpage">
+            {% include "product/_main_form.html.twig" %}
+    </section>
+
+    <section class="banner-adds">
+        <img src="img/pub.jpg" alt="publicité">
+    </section>
+
+    <section class="results searchpage-results">
+        <h1 class="results-title">Annonces : Toute la France</h1>
+        <div class="results-controls">
+
+            {% include "product/_sort.html.twig" %}
+
+            <button class="save-search btn btn-orange">
+                {% include "product/_save_search_button.html.twig" %}
+            </button>
+        </div>
+
+        <main class="results-main">
+            <ul class="results-list">
+            
+                {% for product in pagination.items %}
+                    {% include "product/_product_card.html.twig" %}
+                {% endfor %}
+
+                <button class="save-search-sticky btn btn-orange">
+                    {% include "product/_save_search_button.html.twig" %}
+                </button>
+                
+                {% do pagination.setTemplate('product/_pagination.html.twig') %}
+                {{ knp_pagination_render(pagination) }}
+                
+            </ul>
+            <aside class="sidebar">
+                <div class="sidebar-pub"></div>
+            </aside>
+        </main>
+    </section>
+    
+    {% include "layouts/js_templates/home/main_form/main_form_templates.html.twig" %}
+    {% include "layouts/js_templates/product/search_sort_options.html.twig" %}
+    {% include "layouts/js_templates/home/info/info_templates.html.twig" %}
+{% endblock %}

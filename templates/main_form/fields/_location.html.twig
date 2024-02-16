@@ -1,0 +1,27 @@
+<div class="form-group form-input main-form-location-group">
+    <svg class="icon i-left i-location">
+        <use xlink:href="/img/svg/sprite.svg#location"></use>
+    </svg>
+    <svg class="icon i-left i-location-fill">
+        <use xlink:href="/img/svg/sprite.svg#location-fill"></use>
+    </svg>
+    <input 
+        class="main-form-input main-form-location location-slider-opener js-auto-suggest suggest-location form-box" 
+        {# slider #}
+        data-template="#main-form-location-template"
+        data-closer=".i-return"
+        data-maxwidth="1050"
+        {# autosuggest #}
+        data-entrypoint="https://api-adresse.data.gouv.fr/search?type=municipality&limit=5"
+        data-minqlength="3"
+        data-locationsuggestor="true"
+
+        type="text" 
+        name="location" 
+        id="location" 
+        placeholder="Saisissez une ville et un rayon"
+        autocomplete="off"
+        value="{{ searchFilter.location }}"
+        >
+    <div class="location-bubbles-container"></div>
+</div>
